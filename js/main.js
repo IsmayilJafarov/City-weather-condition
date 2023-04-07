@@ -2,7 +2,7 @@ const apiKey = '846c2026c587416f8cc03502230304'
 
 'XML: http://api.weatherapi.com/v1/current.xml?key=${apiKey}&q=${city}'
 
-'JSON: https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}'
+'JSON: http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}'
 
 const resultNode = document.querySelector('.result');
 const inputNode = document.querySelector('.input');
@@ -27,7 +27,7 @@ const ultraViolet = document.querySelector('.ultra-violet')
 formNode.addEventListener('submit', (e) => {
     e.preventDefault(e);
     let city = inputNode.value.trim();
-    const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}'`;
+    const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}'`;
 
     fetch(url).then((response) => {
         return response.json();
