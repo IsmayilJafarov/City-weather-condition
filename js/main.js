@@ -2,7 +2,7 @@ const apiKey = '846c2026c587416f8cc03502230304'
 
 'XML: http://api.weatherapi.com/v1/current.xml?key=${apiKey}&q=${city}'
 
-'JSON: http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}'
+'JSON: https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}'
 
 const resultNode = document.querySelector('.result');
 const inputNode = document.querySelector('.input');
