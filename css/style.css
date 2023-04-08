@@ -1,53 +1,65 @@
-body {
-    background-color: rgb(0, 83, 147);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-h1 {
-    font-size: 50px;
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #005393;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 500px;
+    background: #005393;
+    border-radius: 7px;
 }
 
 .form {
-    cursor: pointer;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
 }
 
 .input {
-    font-size: 50px;
-    padding: 10px;
-    margin: 10px;
-    cursor: pointer;
     background-color: rgb(121, 197, 235);
-    width: 400px;
-    height: 50px;
-    cursor: pointer;
-    border: 2px solid black;
+    font-size: 30px;
+    font-weight: 800;
     text-align: center;
+    padding: 16px 15px;
+    border-radius: 7px;
+    border: 3px solid black;
+    margin-bottom: 15px;
+    cursor: pointer;
 }
 
 .result {
-    font-size: 25px;
+    font-size: 18px;
     font-weight:bold;
-    padding: 10px;
-    margin: 10px;
-    cursor: pointer;
+    padding: 15px 15px;
+    margin: 15px 15px;
     background-color: rgb(121, 197, 235);
-    cursor: pointer;
-    border: 2px solid black;
+    border-radius: 7px;
+    border: 3px solid black;
     text-align: left;
+    transition: 0.5s ease;
+}
+
+.p-result {
+    padding: 10px 0px 10px 0px;
 }
 
 .confirm-button {
     margin: 10px;
     cursor: pointer;
     background-color: rgb(121, 197, 235);
-    font-size: 50px;
-    border: 2px solid black;
+    font-size: 30px;
+    border: 3px solid black;
+    border-radius: 7px;
+    cursor: pointer;
 }
 
